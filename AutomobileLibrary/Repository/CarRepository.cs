@@ -1,4 +1,5 @@
 ﻿using AutomobileLibrary.DataAccess;
+using AutomobileLibrary.DataAccess.AutomobileLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,12 +10,21 @@ namespace AutomobileLibrary.Repository
 {
     public class CarRepository : ICarRepository
     {
-        private CarManagement manager = new CarManagement();
+        public Car GetCarByID(int carID) => CarManagement.Instance.GetCarByID(carID);
 
-        public List<Car> GetCars() => manager.GetCars();
-        public Car GetCarById(int id) => manager.GetCarById(id);
-        public void AddCar(Car car) => manager.AddCar(car);
-        public void UpdateCar(Car car) => manager.UpdateCar(car);
-        public void DeleteCar(int id) => manager.DeleteCar(id);
+        public IEnumerable<Car> GetCarsList() => CarManagement.Instance.GetCarsList();
+
+        public void InsertCar(Car car) => CarManagement.Instance.AddNew(car);
+
+        public void DeleteCar(int carID)
+        {
+            var car = CarManagement.Instance.GetCarByID(carID);
+            if (car != null)
+            {
+                CarManagement.Instance.Remove(car);
+            }
+        }
+
+        public void UpdateCar(Car car) => CarManagement.Instance.UpdateCar(car);
     }
 }

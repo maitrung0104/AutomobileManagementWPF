@@ -7,6 +7,7 @@ C:\Users\Admin\Source\Repos\AutomobileSolution\AutomobileLibrary\obj\Debug\net8.
 C:\Users\Admin\Source\Repos\AutomobileSolution\AutomobileLibrary\obj\Debug\net8.0\AutomobileLibrary.AssemblyInfoInputs.cache
 C:\Users\Admin\Source\Repos\AutomobileSolution\AutomobileLibrary\obj\Debug\net8.0\AutomobileLibrary.AssemblyInfo.cs
 C:\Users\Admin\Source\Repos\AutomobileSolution\AutomobileLibrary\obj\Debug\net8.0\AutomobileLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\AutomobileSolution\AutomobileLibrary\obj\Debug\net8.0\AutomobileLibrary.sourcelink.json
 C:\Users\Admin\Source\Repos\AutomobileSolution\AutomobileLibrary\obj\Debug\net8.0\AutomobileLibrary.dll
 C:\Users\Admin\Source\Repos\AutomobileSolution\AutomobileLibrary\obj\Debug\net8.0\refint\AutomobileLibrary.dll
 C:\Users\Admin\Source\Repos\AutomobileSolution\AutomobileLibrary\obj\Debug\net8.0\AutomobileLibrary.pdb

@@ -23,9 +23,10 @@ namespace AutomobileWPFApp
             services.AddSingleton(typeof(ICarRepository), typeof(CarRepository));
             services.AddSingleton<WindowCarManagement>();
         }
-        private void OnStartup (object sender, StartupEventArgs e)
+        private void OnStartup(object sender, StartupEventArgs e)
         {
             var mainWindow = serviceProvider.GetService<WindowCarManagement>();
             mainWindow.Show();
         }
     }
+}
